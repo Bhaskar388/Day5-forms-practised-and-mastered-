@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fully Structure form</title>
+    <link rel="Icon" href="/Day5Practice/flag.png">
+</head>
+<body style="background-color: rgb(47, 87, 34);">
+    <h5>Day 5 fully with feildset tag and legend tag to add a order for table from and one sentence of personal details</h5>
+    </form> 
+    <hr />
+      <form style="width: 450px" >
+      <fieldset>
+        <legend style="color: rgb(207, 242, 34);">Personal Details</legend>
+        <table>
+        <tr>
+          <td><label for="name">First Name</label></td>
+          <td>
+            <input type="text" placeholder="Enter your first Name" required />
+          </td>
+        </tr>
+        <!-- required att is used for compulsory to fill -->
+        <tr>
+          <td><label for="lastname">Last Name</label></td>
+          <td>
+            <input type="text" placeholder="ENter your Last name" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phonenumber">Phone Number</label></td>
+          <td><input type="tel" placeholder="+91-" required /></td>
+        </tr>
+        <tr>
+          <td><label for="itisemail">Email</label></td>
+          <td>
+            <input type="email" placeholder="Enter yout gmail" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="forpassword">Password</label></td>
+          <td>
+            <input type="password" placeholder="Enter Password" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="confirmpassword">Confirm Password</label></td>
+          <td>
+            <input type="password" placeholder="check you password" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of birth</label></td>
+          <td><input type="date" required /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <input name="gender1" type="radio" value="Male" /><label
+              >Male</label
+            >
+            <input name="gender2" type="radio" value="Female" /><label
+              >Female</label
+            >
+            <input name="gender3" type="radio" value="Others" /><label
+              >Others</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><label for="country"> Select Country</label></td>
+          <td>
+            <select required>
+              <option value="name">Select Country</option>
+              <option value="INDIA">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <!-- value should give once user submut it it will save as per value otherwsie it is just for slect -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="picture">Select Picture</label></td>
+          <td><input type="file" multiple /></td>
+        </tr>
+      </table>
+      </fieldset>
+    </form>
+    <form action="" style="width: 450px">
+    <fieldset>
+      <legend style="color: rgb(207, 242, 34);">Course Details</legend>
+      <table>
+        <tr>
+          <td>Select Course</td>
+          <td>
+            <select name="" id="">
+              <option value="Select">Select</option>
+              <option value="java">Java Full stack Development</option>
+              <option value="python">python Full stack Development</option>
+              <option value="DSA">DSA</option>
+              <option value="DS">Data science</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="mode">Delivery Mode</label></td>
+          <td>
+            <input type="radio"><label for="online">Online</label>
+            <input type="radio"><label for="offline">Offline</label>
+          </td>
+        </tr>
+      </table>
+      <label for="">Message</label> <br>
+      <textarea style="resize: none;" rows="5" cols="40" name="" id=""></textarea>
+      <br><input type="reset"> &nbsp; &nbsp; &nbsp; &nbsp; 
+      <input type="submit">
+     </form>
+     </feildset>
+</body>
+</html>
